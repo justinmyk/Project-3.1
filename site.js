@@ -1,13 +1,13 @@
 /* SITE.JS: THIS FILE CONTAINS THE METHODS/FUNCTIONS AND VARIABLES CONTROLLING YOUR SITE
-// 
+//
 */
 
 /* NOTE: MOVIES.JSON CONTAINS A LIST OF MOVIES AND ACCOMPANYING METADATA
-//    
+//
 //    They are in the following format:
 //    title (String): the name of the movie
 //    iscore (Number): the IMDB score
-//    rating (String): the movie's MPAA rating 
+//    rating (String): the movie's MPAA rating
 //    released (Array): the release date. Note that the order of the array is:  YYYY, MM, DD
 //    country (String): the country of production
 //    posters (Array): an array of String values with the URL to movie posters (in your img/ directory)
@@ -22,7 +22,7 @@
 
 
 const vue_app = new Vue({
-      el: '#vue_app',
+      el: '#vue-app',
       // This automatically imports your movies.json file and puts it into
       //   the variable: movies
       created () {
@@ -31,14 +31,14 @@ const vue_app = new Vue({
             })
       },
       data: {
-            // This holds your movies.json data.
+            title: "IMDB + Justin's Top 8 Movies",
+            owner: "Justin",
+            github: "https://justinmyk.github.io/Project-3.1/",
             movies: []
 
-            /* ADD ADDITIONAL VARIABLES FOR STEP 3 HERE */
+
       },
       methods: {
             /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
       }
 })
-	
-
